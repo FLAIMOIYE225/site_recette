@@ -12,12 +12,10 @@ body{
 
 div.contenu{
     background-color: white;
-    margin: 0px 10% 80px 10%;
-    padding: 0px 30px 30px 30px;
-    min-width: 360px;
-    box-shadow: 0px 0px 20px;
+    margin: 40px 8x 40px 8px;
+    padding: 0px 8px 20px 8px;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
-    margin-top: 60px;
 }
 
 p.categorie{
@@ -66,18 +64,18 @@ table.info{
     position: absolute; 
     bottom: 0; width: 100%; 
     background-color: #6c829dc0;
-    height: 80px;
+    height: 50px;
 }
 
 table.info td{
     text-align: center;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 table.info th{
     vertical-align: bottom;
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 8px;
 }
 
@@ -148,4 +146,41 @@ table.preparation td.preparation_etape{
 
 table.preparation tr{
     height: 40px;
+} 
+
+
+/* Style pour les ordinateurs */
+
+@media only screen and (min-width: 768px) {
+    div.contenu{
+        margin: 40px 10% 40px 10%;
+        padding: 0px 8px 20px 8px;
+        min-width: 360px;
+    }
+
+    table.info{
+        height: 80px;
+    }
+
+    table.info td{
+        font-size: 14px;
+    }
+    
+    table.info th{
+        font-size: 16px;
+    }
+    
+}
+
+
+@media only screen and (min-width : 900px) {
+    
+    div.contenu{
+        
+        margin-left: auto;
+        margin-right: auto;
+        width : 675px;
+
+    }
+    
 }
